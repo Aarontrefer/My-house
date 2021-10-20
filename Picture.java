@@ -63,9 +63,16 @@ public class Picture
         sun.moveVertical(100);
         sun.changeSize(80);
         sun.makeVisible();
-        sun.slowMoveVertical(-100);
+        sun.slowMoveVertical(-111);
     }
-
+    
+     /**
+     * Draw this picture.
+     */
+    public void atardecer()
+    {
+        sun.slowMoveVertical(111); 
+    }
     /**
      * Change this picture to black/white display
      */
