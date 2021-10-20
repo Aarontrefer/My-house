@@ -15,6 +15,7 @@ public class Picture
     private Square window;
     private Triangle roof;
     private Circle sun;
+    private Square prado;
 
     /**
      * Constructor for objects of class Picture
@@ -35,6 +36,14 @@ public class Picture
         wall.changeSize(120);
         wall.makeVisible();
         
+        prado = new Square();
+        prado.changeColor("green");
+        prado.moveHorizontal(-340);
+        prado.moveVertical(130);
+        prado.changeSize(550);
+        prado.makeVisible();
+
+        
         window = new Square();
         window.changeColor("black");
         window.moveHorizontal(-120);
@@ -51,9 +60,10 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(-40);
+        sun.moveVertical(100);
         sun.changeSize(80);
         sun.makeVisible();
+        sun.slowMoveVertical(-100);
     }
 
     /**
